@@ -19,120 +19,7 @@ R は多くの貢献者による共同プロジェクトです。
 'help.start()' で HTML ブラウザによるヘルプがみられます。 
 'q()' と入力すれば R を終了します。 
 
-> data <- read.csv(file=”result.csv”,header=T, fileEncoding=”utf8″,row.names=1)
- エラー:  想定外の入力です  in "data <- read.csv(file=?"
-> data <- read.csv(file="result.csv",header=T, fileEncoding="utf8",row.names=1)
- file(file, "rt", encoding = fileEncoding) でエラー: 
-   コネクションを開くことができません 
- 追加情報:  警告メッセージ: 
- file(file, "rt", encoding = fileEncoding) で: 
-   ファイル 'result.csv' を開くことができません: No such file or directory 
-> data <- read.csv(file="result.csv",header=T, fileEncoding="utf8",row.names=1)
- read.table(file = file, header = header, sep = sep, quote = quote,  でエラー: 
-   重複した 'row.names' は許されません 
-> data <- read.csv(file="result.csv",header=T, fileEncoding="utf8",row.names=1)
- read.table(file = file, header = header, sep = sep, quote = quote,  でエラー: 
-   ファイルの先頭が空です 
- 追加情報:  警告メッセージ: 
-1:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-   入力コネクション 'result.csv' に不正な入力がありました 
-2:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-  line 1 appears to contain embedded nulls
-3:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-  incomplete final line found by readTableHeader on 'result.csv'
-> data <- read.csv(file="result.csv",header=T, fileEncoding="utf8",row.names=1)
- 警告メッセージ: 
-1:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-   入力コネクション 'result.csv' に不正な入力がありました 
-2:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-  incomplete final line found by readTableHeader on 'result.csv'
-> data <- read.csv(file="result.csv",header=T, fileEncoding="utf8",row.names=1)
- 警告メッセージ: 
-1:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-   入力コネクション 'result.csv' に不正な入力がありました 
-2:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-  incomplete final line found by readTableHeader on 'result.csv'
-> data <- read.csv(file="result.csv",header=T, fileEncoding="utf8",row.names=1)
- 警告メッセージ: 
-1:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-   入力コネクション 'result.csv' に不正な入力がありました 
-2:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-  incomplete final line found by readTableHeader on 'result.csv'
-> data <- read.csv(file="result.csv",header=T, fileEncoding="utf8",row.names=1)
- 警告メッセージ: 
-1:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-   入力コネクション 'result.csv' に不正な入力がありました 
-2:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-  incomplete final line found by readTableHeader on 'result.csv'
-> data
- 0 列 0 行のデータフレーム 
-> data <- read.csv(file="result.csv",header=T, fileEncoding="utf8")
- 警告メッセージ: 
-1:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-   入力コネクション 'result.csv' に不正な入力がありました 
-2:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-  incomplete final line found by readTableHeader on 'result.csv'
-> data
-[1] X.
- <0 行> (または長さ 0 の row.names) 
-> data <- read.csv(file="result.csv",header=T, fileEncoding="utf8",row.names=1)
- read.table(file = file, header = header, sep = sep, quote = quote,  でエラー: 
-   ファイルの先頭が空です 
- 追加情報:  警告メッセージ: 
-1:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-   入力コネクション 'result.csv' に不正な入力がありました 
-2:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-  line 1 appears to contain embedded nulls
-3:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-  incomplete final line found by readTableHeader on 'result.csv'
-> data
-[1] X.
- <0 行> (または長さ 0 の row.names) 
-> data <- read.csv("result.csv",header=T, fileEncoding="utf8")
- 警告メッセージ: 
-1:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-   入力コネクション 'result.csv' に不正な入力がありました 
-2:  read.table(file = file, header = header, sep = sep, quote = quote,  で: 
-  incomplete final line found by readTableHeader on 'result.csv'
-> dat <- read.table("result.csv",sep=",", fileEncoding="utf8")
- 警告メッセージ: 
-1:  read.table("result.csv", sep = ",", fileEncoding = "utf8") で: 
-   入力コネクション 'result.csv' に不正な入力がありました 
-2:  read.table("result.csv", sep = ",", fileEncoding = "utf8") で: 
-  incomplete final line found by readTableHeader on 'result.csv'
-> dat
-  V1
-1  <
-> dat <- read.table("result.csv",sep=",", fileEncoding="Shift_JIS")
-> dat
-       V1         V2         V3         V4         V5         V6         V7
-1  形容詞       1png       2png       3png       4png       5png       6png
-2       1 -0.4117647          0 1.11764706 0.82352941 0.35294118 1.05882353
-3       2 -1.3529412 -0.2941176 0.70588235 0.58823529 -0.0588235 -0.3529412
-4       3 -0.0588235 0.11764706          1          1 0.35294118 1.35294118
-5       4 -1.7058824 -1.3529412 1.70588235 1.58823529 0.70588235 -0.1764706
-6       5 -1.3529412 -1.1176471 -0.5294118 -1.0588235          0 -0.8235294
-7       6 1.64705882 0.82352941 -1.1764706 -1.1176471 0.17647059 0.58823529
-8       7 -1.0588235 -1.7647059 0.88235294 1.11764706 1.35294118 -1.0588235
-9       8 0.11764706 -0.2352941 0.35294118 0.35294118 -1.5294118 0.41176471
-10      9 -0.2352941 -0.1764706 1.35294118 1.17647059 1.70588235 -0.3529412
-11     10 -1.1764706          0 1.47058824 1.35294118     -0.125 -1.2352941
-           V8          V9        V10        V11
-1        7png        8png       9png      10png
-2  1.64705882  1.05882353 -0.2352941          1
-3  0.76470588  0.52941176 -0.4705882 0.11764706
-4  1.52941176  1.76470588          0 0.29411765
-5  0.17647059  0.11767059 -0.8235294 0.35294118
-6  -0.2941176  0.11764706         -1 0.52941176
-7  -0.8235294  0.17647059 0.41176471 -0.1176471
-8  -0.8235294  -0.9411765 -1.7647059 -1.7058824
-9  0.76470588  0.58823529 -0.7058824 -1.2352941
-10 -0.1764706 0.411764471          0 1.47058824
-11 0.94117647  0.05882353         -1 1.35294118
-> corcor1 <- cor(dat);
- cor(dat) でエラー:  'x' は数値でなければなりません 
-> cor1 <- cor(dat);
- cor(dat) でエラー:  'x' は数値でなければなりません 
+> dat <- read.table("result.csv",sep=",", fileEncoding="Shift_JIS")  #失敗(型名がV)
 > dat
        V1         V2         V3         V4         V5         V6         V7
 1  形容詞       1png       2png       3png       4png       5png       6png
@@ -191,49 +78,7 @@ R は多くの貢献者による共同プロジェクトです。
 "factor" "factor" "factor" "factor" "factor" "factor" "factor" "factor" 
      V10      V11 
 "factor" "factor" 
-> as.numeric(as.character(dat))
- [1] NA NA NA NA NA NA NA NA NA NA
- 警告メッセージ: 
- 強制変換により NA が生成されました  
-> as.numeric(as.character(dat&V2))
- エラー:  オブジェクト 'V2' がありません 
-> as.numeric(as.character(dat&1png))
- エラー:  想定外のシンボルです  in "as.numeric(as.character(dat&1png"
-> dat
-               V2         V3         V4         V5         V6         V7
-形容詞       1png       2png       3png       4png       5png       6png
-1      -0.4117647          0 1.11764706 0.82352941 0.35294118 1.05882353
-2      -1.3529412 -0.2941176 0.70588235 0.58823529 -0.0588235 -0.3529412
-3      -0.0588235 0.11764706          1          1 0.35294118 1.35294118
-4      -1.7058824 -1.3529412 1.70588235 1.58823529 0.70588235 -0.1764706
-5      -1.3529412 -1.1176471 -0.5294118 -1.0588235          0 -0.8235294
-6      1.64705882 0.82352941 -1.1764706 -1.1176471 0.17647059 0.58823529
-7      -1.0588235 -1.7647059 0.88235294 1.11764706 1.35294118 -1.0588235
-8      0.11764706 -0.2352941 0.35294118 0.35294118 -1.5294118 0.41176471
-9      -0.2352941 -0.1764706 1.35294118 1.17647059 1.70588235 -0.3529412
-10     -1.1764706          0 1.47058824 1.35294118     -0.125 -1.2352941
-               V8          V9        V10        V11
-形容詞       7png        8png       9png      10png
-1      1.64705882  1.05882353 -0.2352941          1
-2      0.76470588  0.52941176 -0.4705882 0.11764706
-3      1.52941176  1.76470588          0 0.29411765
-4      0.17647059  0.11767059 -0.8235294 0.35294118
-5      -0.2941176  0.11764706         -1 0.52941176
-6      -0.8235294  0.17647059 0.41176471 -0.1176471
-7      -0.8235294  -0.9411765 -1.7647059 -1.7058824
-8      0.76470588  0.58823529 -0.7058824 -1.2352941
-9      -0.1764706 0.411764471          0 1.47058824
-10     0.94117647  0.05882353         -1 1.35294118
-> dat$V2
- [1] 1png       -0.4117647 -1.3529412 -0.0588235 -1.7058824 -1.3529412
- [7] 1.64705882 -1.0588235 0.11764706 -0.2352941 -1.1764706
-10 Levels: -0.0588235 -0.2352941 -0.4117647 -1.0588235 ... 1png
-> as.numeric(as.character(dat$V2))
- [1]         NA -0.4117647 -1.3529412 -0.0588235 -1.7058824 -1.3529412
- [7]  1.6470588 -1.0588235  0.1176471 -0.2352941 -1.1764706
- 警告メッセージ: 
- 強制変換により NA が生成されました  
-> data <- read.csv(file="result.csv",header=T, fileEncoding="Shift_JIS",row.names=1)
+> data <- read.csv(file="result.csv",header=T, fileEncoding="Shift_JIS",row.names=1)  #成功(型名がX)
 > data
         X1png      X2png      X3png      X4png      X5png      X6png      X7png
 1  -0.4117647  0.0000000  1.1176471  0.8235294  0.3529412  1.0588235  1.6470588
@@ -316,10 +161,7 @@ $vectors
  [8,]  0.41594079  0.62723715  0.15279705 -0.09454393
  [9,]  0.22704177 -0.29025125 -0.38084458  0.24930294
 [10,] -0.47937383  0.13919301  0.15285047  0.10912244
-
 > eigen1 <- eigen(cor1)$values
-> eigwn1
- エラー:  オブジェクト 'eigwn1' がありません 
 > eigen1
  [1]  4.157643e+00  2.857686e+00  1.388125e+00  8.961403e-01  4.801715e-01
  [6]  1.061529e-01  6.779830e-02  4.210360e-02  4.179411e-03 -5.551115e-17
